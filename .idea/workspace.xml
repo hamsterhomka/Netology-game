@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9955046-f247-43cd-9e70-a356491eedb6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/.idea/deployment.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/.idea/js-game-1.4.1.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/.idea/watcherTasks.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/game.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/levels.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/res/preview.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/test/actor.spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/test/coin.spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/test/fireball.spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/test/firerain.spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/test/horizontalfireball.spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/test/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/test/level.spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/test/parser.spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/test/player.spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/test/vector.spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/test/verticalfireball.spec.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js-game-1.4.1/.idea/workspace.xml" afterPath="$PROJECT_DIR$/js-game-1.4.1/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js-game-1.4.1/.idea/workspace.xml" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/game.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="862">
-              <caret line="245" column="0" lean-forward="true" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
+              <caret line="245" column="0" lean-forward="false" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -301,12 +276,12 @@
       <workItem from="1549719048323" duration="4245000" />
       <workItem from="1549800276110" duration="3361000" />
       <workItem from="1549884334936" duration="20912000" />
-      <workItem from="1549914541824" duration="1000" />
+      <workItem from="1549914541824" duration="94000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31163000" />
+    <option name="totallyTimeSpent" value="31256000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -491,7 +466,7 @@
     <entry file="file://$PROJECT_DIR$/game.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="862">
-          <caret line="245" column="0" lean-forward="true" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
+          <caret line="245" column="0" lean-forward="false" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
           <folding />
         </state>
       </provider>
