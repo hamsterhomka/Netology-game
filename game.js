@@ -75,35 +75,40 @@ class Level {
     constructor(grid = [],actors = []) {
         this.grid = grid;
         this.actors = actors;
-        this.height = grid.length;
-        this.width = this.getWidth();
         this.status = null;
         this.finishDelay = 1;
-        this.player = this.getPlayer();
+        this._height = grid.length;
+        this._width = this.getWidth();
+        this._player = this.getPlayer();
+    }
+
+    get height() {
+        return this._height;
+    }
+
+    get width() {
+        return this._width;
+    }
+
+    get player() {
+        return this._player;
     }
 
     getWidth() {
-        let biggestRowLength = 0;
-
-        this.grid.forEach((row) => {
-            if(row.length > biggestRowLength) {
-                biggestRowLength = row.length;
+        return this.grid.reduce((acc,row) => {
+            if(row.length > acc) {
+                acc = row.length;
             }
-        });
-
-        return biggestRowLength;
+            return acc
+        }, 0);
     }
 
     getPlayer() {
-        let player = undefined;
-
-        this.actors.forEach(actor => {
+        return this.actors.find(actor => {
             if(actor.type === 'player') {
-                player = actor;
+                return true
             }
         });
-
-        return player;
     }
 
     isFinished() {
@@ -154,8 +159,6 @@ class Level {
                     if(objectInGrid) return objectInGrid;
                 }
             }
-
-            return undefined;
         }
     }
 
