@@ -23,11 +23,11 @@ class Actor {
     constructor(pos = new Vector(0,0),size = new Vector(1,1),speed = new Vector(0,0)) {
         if(!(pos instanceof Vector) || !(size instanceof Vector) || !(speed instanceof Vector)) {
             throw new Error('Классу Actor можно задавать аргументы только типа Vector');
-        } else {
-            this.pos = pos;
-            this.size = size;
-            this.speed = speed;
         }
+
+        this.pos = pos;
+        this.size = size;
+        this.speed = speed;
     }
 
     act() {
@@ -61,13 +61,13 @@ class Actor {
             throw new Error('Объект должен являться экземпляром класса Actor');
         } else if(actor === this) {
             return false
-        } else {
-            return this !== actor &&
-            this.right > actor.left &&
-            this.left < actor.right &&
-            this.bottom > actor.top &&
-            this.top < actor.bottom;
         }
+
+        return this !== actor &&
+        this.right > actor.left &&
+        this.left < actor.right &&
+        this.bottom > actor.top &&
+        this.top < actor.bottom;
     }
 }
 
@@ -120,17 +120,17 @@ class Level {
             throw new Error('Объект должен быть не пустым');
         } else if(!(actor instanceof Actor)) {
             throw new Error('Объект должен являться экземпляром класса Actor');
-        } else {
-            let intersectedActor = undefined;
-
-            this.actors.forEach(levelActor => {
-                if(levelActor.isIntersect(actor)) {
-                    intersectedActor = levelActor;
-                }
-            });
-
-            return intersectedActor;
         }
+
+        let intersectedActor = undefined;
+
+        this.actors.forEach(levelActor => {
+            if(levelActor.isIntersect(actor)) {
+                intersectedActor = levelActor;
+            }
+        });
+
+        return intersectedActor;
     }
 
     obstacleAt(pos,size) {
@@ -138,26 +138,26 @@ class Level {
             throw new Error('Положение должно быть экземпляром класса Vector');
         } else if(!(size instanceof Vector)) {
             throw new Error('Размер должен быть экземпляром класса Vector');
-        } else {
-            let yStart = Math.ceil(pos.y + size.y);
-            let yEnd = Math.floor(pos.y);
-            let xStart = Math.floor(pos.x);
-            let xEnd = Math.ceil(pos.x + size.x);
+        }
 
-            if(yStart > this.height) {
-                return 'lava';
-            }
+        let yStart = Math.ceil(pos.y + size.y);
+        let yEnd = Math.floor(pos.y);
+        let xStart = Math.floor(pos.x);
+        let xEnd = Math.ceil(pos.x + size.x);
 
-            if(xStart < 0 || xEnd > this.width || yEnd < 0) {
-                return 'wall';
-            }
+        if(yStart > this.height) {
+            return 'lava';
+        }
 
-            for(let y = yEnd; y < yStart; y++) {
-                for(let x = xStart; x < xEnd; x++) {
-                    let objectInGrid = this.grid[y][x];
+        if(xStart < 0 || xEnd > this.width || yEnd < 0) {
+            return 'wall';
+        }
 
-                    if(objectInGrid) return objectInGrid;
-                }
+        for(let y = yEnd; y < yStart; y++) {
+            for(let x = xStart; x < xEnd; x++) {
+                let objectInGrid = this.grid[y][x];
+
+                if(objectInGrid) return objectInGrid;
             }
         }
     }
